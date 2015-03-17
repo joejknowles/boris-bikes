@@ -1,0 +1,51 @@
+Boris Bikes Intro
+BDD, TDD & OOP Basics: Boris Bikes
+
+- BDD and TDD work together in agile development
+    - BDD
+      - Inherets from TDD and DDD
+      - Has tools which are TDD tools with guidance towards behavioural language
+      - Makes more specific choices on what to test than TDD
+      - User Stories to Feature Tests, then from Feature Tests to Unit Tests, and then from Unit Tests to Features
+    - TDD
+      - define (failing) test -> make software -> check test succeeds -> refactor
+      - for simple design with confidence
+- OOP
+- DDD Domain Driven Design
+  - Centered on the main subject area, or 'domain'
+  - Complex systems are designed around models of this domain
+- Emergent Design
+  - Start with key use cases.
+  - Go from feature tests to unit tests with each.
+
+
+- Project objective
+  - Public can remove and return bikes from docking stations
+  - garage can fix broken bikes
+  - van can move the bikes
+
+Boris Bikes stage 0
+Domain Model and Project Setup
+
+- Point out nouns and verbs in description
+- decide on most important user story
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
