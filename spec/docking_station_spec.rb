@@ -32,4 +32,21 @@ describe DockingStation do
     subject.dock broken_bike
     expect { subject.release_bike }.to raise_error 'No Bikes Available'
   end
+
+  it 'releases only broken bikes' do
+    3.times do
+      subject.dock double :bike, broken?: false
+      subject.dock double :bike, broken?: true
+    end
+    expect(subject.release_broken).to be_all(&:broken?)
+  end
+
+  it 'keeps no broken bikes' do
+    3.times do
+      subject.dock double :bike, broken?: false
+      subject.dock double :bike, broken?: true
+    end
+    subject.release_broken
+    expect(subject.bikes).to be_none(&:broken?)
+  end
 end
