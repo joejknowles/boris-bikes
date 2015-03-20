@@ -10,7 +10,7 @@ feature 'member of public accesses bike' do
   scenario 'docking station unable to release as none available' do
     expect { docking_station.release_bike }.to raise_error 'No Bikes Available'
   end
-  scenario 'docking station will not making broken bikes available' do
+  scenario 'docking station will not make broken bikes available' do
     broken_bike = Bike.new
     broken_bike.break
     docking_station.dock broken_bike
